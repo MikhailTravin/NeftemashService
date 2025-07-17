@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Тарифы"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page__banner banner rates-banner">
+					<div class="banner__bg">
+						<img class="banner__bg-desc" data-src="../img/banners/banner-12.webp" srcset="../img/banners/banner-12.webp 1x, ../img/banners/banner-12@2x.webp 2x" alt>
+						<img class="banner__bg-mob" data-src="../img/banners/banner-mob-12.webp" srcset="../img/banners/banner-mob-12.webp 1x, ../img/banners/banner-mob-12@2x.webp 2x" alt>
+					</div>
+					<div class="banner__container">
+						<div class="banner__content">
+							<h5>Тарифы</h5>
+							<h1>Фиксированные цены,
+								неизменные в течение года
+							</h1>
+							<p>ООО «Нефтемашсервис-С» — независимая сбытовая компания,
+								поэтому мы предлагаем более гибкий график оплаты электрической энергии, чем у наших конкурентов
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="page__rates rates">
+					<div class="rates__container">
+						<div class="rates__content">
+							<div data-tabs class="rates__tabs tabs">
+								<div class="tabs__nav-select select">
+									<div class="select__menu">
+										<div class="select__btn">
+											<div class="select__btntext">
+												Прейскурант услуг
+											</div>
+											<div class="select__icon _icon-arrow"></div>
+										</div>
+										<div class="select__body">
+											<ul class="select__options">
+												<li data-id="1" class="select__option">
+													<div class="select__option-text">Прейскурант услуг</div>
+												</li>
+												<li data-id="2" class="select__option">
+													<div class="select__option-text">Тарифы Москва</div>
+												</li>
+												<li data-id="3" class="select__option">
+													<div class="select__option-text">Тарифы МО</div>
+												</li>
+												<li data-id="4" class="select__option">
+													<div class="select__option-text">Тарифы Калужской обл.</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title"><span>Прейскурант услуг</span></button>
+									<button type="button" class="tabs__title"><span>Тарифы Москва</span></button>
+									<button type="button" class="tabs__title"><span>Тарифы МО</span></button>
+									<button type="button" class="tabs__title"><span>Тарифы Калужской обл.</span></button>
+									<button data-id="5" data-da=".tabs__content,991.98" type="button" class="tabs__title tabs-title-archive select__option _tab-active _active"><span>Архив тарифов</span></button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div data-id="1" class="tabs__body">
+										<div class="tabs__categories">
+											<div class="tabs__categories-title">Категория потребителей</div>
+											<div class="tabs__select select">
+												<div class="select__menu">
+													<div class="select__btn">
+														<div class="select__btntext">
+															Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...
+														</div>
+														<div class="select__icon _icon-arrow"></div>
+													</div>
+													<div class="select__body">
+														<ul class="select__options">
+															<li class="select__option">
+																<div class="select__option-text">Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...</div>
+															</li>
+															<li class="select__option">
+																<div class="select__option-text">Рассмотрение и согласование проектной документации в течение 5 дней</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__table table-tabs">
+											<div class="table-tabs__content">
+												<div class="table-tabs__navigation">
+													<div class="table-tabs__name">
+														Городское и сельское население, проживающее в домах, оборудованных в установленном порядке стационарными электроплитами и электроотопительными установками
+													</div>
+													<div class="table-tabs__subname">
+														<span>Цена</span>
+														руб./кВт. ч
+													</div>
+												</div>
+												<div class="table-tabs__row">
+													<div class="table-tabs__column">
+														<div class="table-tabs__main-name">Одноставочный тариф</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">
+															Одноставочный тариф, дифференцированный по <a href="#">двум</a> зонам суток
+														</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Дневная зона (пиковая и полупиковая)</div>
+														<div class="table-tabs__subname">7,85</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">Одноставочный тариф, дифференцированный по <a href="#">трем</a> зонам суток</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Пиковая зона</div>
+														<div class="table-tabs__subname">9,35</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Полупиковая зона</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__rates-downloads rates-downloads">
+											<div class="rates-downloads__title">Тарифы указаны с учетом НДС. Тарифы на электрическую энергию не включают
+												в себя балансовые показатели и примененные понижающие коэффициенты.
+											</div>
+											<div class="rates-downloads__row">
+												<div class="rates-downloads__column">
+													<div class="rates-downloads__download">
+														<a href="#" download="#" class="_icon-downlaod">Тарифы 2023г. для населения и приравненных к нему категорий потребителей города Москвы (pdf)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-id="2" class="tabs__body">
+										<div class="tabs__categories">
+											<div class="tabs__categories-title">Категория потребителей</div>
+											<div class="tabs__select select">
+												<div class="select__menu">
+													<div class="select__btn">
+														<div class="select__btntext">
+															Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...
+														</div>
+														<div class="select__icon _icon-arrow"></div>
+													</div>
+													<div class="select__body">
+														<ul class="select__options">
+															<li class="select__option">
+																<div class="select__option-text">Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...</div>
+															</li>
+															<li class="select__option">
+																<div class="select__option-text">Рассмотрение и согласование проектной документации в течение 5 дней</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__table table-tabs">
+											<div class="table-tabs__content">
+												<div class="table-tabs__navigation">
+													<div class="table-tabs__name">
+														Городское и сельское население, проживающее в домах, оборудованных в установленном порядке стационарными электроплитами и электроотопительными установками
+													</div>
+													<div class="table-tabs__subname">
+														<span>Цена</span>
+														руб./кВт. ч
+													</div>
+												</div>
+												<div class="table-tabs__row">
+													<div class="table-tabs__column">
+														<div class="table-tabs__main-name">Одноставочный тариф</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">
+															Одноставочный тариф, дифференцированный по <a href="#">двум</a> зонам суток
+														</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Дневная зона (пиковая и полупиковая)</div>
+														<div class="table-tabs__subname">7,85</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">Одноставочный тариф, дифференцированный по <a href="#">трем</a> зонам суток</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Пиковая зона</div>
+														<div class="table-tabs__subname">9,35</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Полупиковая зона</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__rates-downloads rates-downloads">
+											<div class="rates-downloads__title">Тарифы указаны с учетом НДС. Тарифы на электрическую энергию не включают
+												в себя балансовые показатели и примененные понижающие коэффициенты.
+											</div>
+											<div class="rates-downloads__row">
+												<div class="rates-downloads__column">
+													<div class="rates-downloads__download">
+														<a href="#" download="#" class="_icon-downlaod">Тарифы 2023г. для населения и приравненных к нему категорий потребителей города Москвы (pdf)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-id="3" class="tabs__body">
+										<div class="tabs__categories">
+											<div class="tabs__categories-title">Категория потребителей</div>
+											<div class="tabs__select select">
+												<div class="select__menu">
+													<div class="select__btn">
+														<div class="select__btntext">
+															Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...
+														</div>
+														<div class="select__icon _icon-arrow"></div>
+													</div>
+													<div class="select__body">
+														<ul class="select__options">
+															<li class="select__option">
+																<div class="select__option-text">Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...</div>
+															</li>
+															<li class="select__option">
+																<div class="select__option-text">Рассмотрение и согласование проектной документации в течение 5 дней</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__table table-tabs">
+											<div class="table-tabs__content">
+												<div class="table-tabs__navigation">
+													<div class="table-tabs__name">
+														Городское и сельское население, проживающее в домах, оборудованных в установленном порядке стационарными электроплитами и электроотопительными установками
+													</div>
+													<div class="table-tabs__subname">
+														<span>Цена</span>
+														руб./кВт. ч
+													</div>
+												</div>
+												<div class="table-tabs__row">
+													<div class="table-tabs__column">
+														<div class="table-tabs__main-name">Одноставочный тариф</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">
+															Одноставочный тариф, дифференцированный по <a href="#">двум</a> зонам суток
+														</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Дневная зона (пиковая и полупиковая)</div>
+														<div class="table-tabs__subname">7,85</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">Одноставочный тариф, дифференцированный по <a href="#">трем</a> зонам суток</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Пиковая зона</div>
+														<div class="table-tabs__subname">9,35</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Полупиковая зона</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__rates-downloads rates-downloads">
+											<div class="rates-downloads__title">Тарифы указаны с учетом НДС. Тарифы на электрическую энергию не включают
+												в себя балансовые показатели и примененные понижающие коэффициенты.
+											</div>
+											<div class="rates-downloads__row">
+												<div class="rates-downloads__column">
+													<div class="rates-downloads__download">
+														<a href="#" download="#" class="_icon-downlaod">Тарифы 2023г. для населения и приравненных к нему категорий потребителей города Москвы (pdf)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-id="4" class="tabs__body">
+										<div class="tabs__categories">
+											<div class="tabs__categories-title">Категория потребителей</div>
+											<div class="tabs__select select">
+												<div class="select__menu">
+													<div class="select__btn">
+														<div class="select__btntext">
+															Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...
+														</div>
+														<div class="select__icon _icon-arrow"></div>
+													</div>
+													<div class="select__body">
+														<ul class="select__options">
+															<li class="select__option">
+																<div class="select__option-text">Городское и сельское население, проживающее в домах, оборудованных в установленном порядке ...</div>
+															</li>
+															<li class="select__option">
+																<div class="select__option-text">Рассмотрение и согласование проектной документации в течение 5 дней</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__table table-tabs">
+											<div class="table-tabs__content">
+												<div class="table-tabs__navigation">
+													<div class="table-tabs__name">
+														Городское и сельское население, проживающее в домах, оборудованных в установленном порядке стационарными электроплитами и электроотопительными установками
+													</div>
+													<div class="table-tabs__subname">
+														<span>Цена</span>
+														руб./кВт. ч
+													</div>
+												</div>
+												<div class="table-tabs__row">
+													<div class="table-tabs__column">
+														<div class="table-tabs__main-name">Одноставочный тариф</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">
+															Одноставочный тариф, дифференцированный по <a href="#">двум</a> зонам суток
+														</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Дневная зона (пиковая и полупиковая)</div>
+														<div class="table-tabs__subname">7,85</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+													<div class="table-tabs__main-column">
+														<div class="table-tabs__main-name">Одноставочный тариф, дифференцированный по <a href="#">трем</a> зонам суток</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Пиковая зона</div>
+														<div class="table-tabs__subname">9,35</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Полупиковая зона</div>
+														<div class="table-tabs__subname">6,43</div>
+													</div>
+													<div class="table-tabs__column">
+														<div class="table-tabs__name">Ночная зона</div>
+														<div class="table-tabs__subname">2,98</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__rates-downloads rates-downloads">
+											<div class="rates-downloads__title">Тарифы указаны с учетом НДС. Тарифы на электрическую энергию не включают
+												в себя балансовые показатели и примененные понижающие коэффициенты.
+											</div>
+											<div class="rates-downloads__row">
+												<div class="rates-downloads__column">
+													<div class="rates-downloads__download">
+														<a href="#" download="#" class="_icon-downlaod">Тарифы 2023г. для населения и приравненных к нему категорий потребителей города Москвы (pdf)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-id="5" class="tabs__body tabs-archive _active">
+										<div class="tabs__categories">
+											<div class="tabs__select select">
+												<div class="select__menu">
+													<div class="select__btn">
+														<div class="select__btntext">
+															2022
+														</div>
+														<div class="select__icon _icon-arrow"></div>
+													</div>
+													<div class="select__body">
+														<ul class="select__options">
+															<li class="select__option">
+																<div class="select__option-text">2023</div>
+															</li>
+															<li class="select__option">
+																<div class="select__option-text">2020</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs-archive__body">
+											<div class="tabs-archive__column">
+												<div class="tabs-archive__item">
+													<div class="tabs-archive__title _icon-pdf">Москва</div>
+													<a href="#" dowmload="#" class="tabs-archive__download _icon-downlaod"><span>Скачать</span></a>
+												</div>
+											</div>
+											<div class="tabs-archive__column">
+												<div class="tabs-archive__item">
+													<div class="tabs-archive__title _icon-pdf">Московская область</div>
+													<a href="#" dowmload="#" class="tabs-archive__download _icon-downlaod"><span>Скачать</span></a>
+												</div>
+											</div>
+											<div class="tabs-archive__column">
+												<div class="tabs-archive__item">
+													<div class="tabs-archive__title _icon-pdf">Калужская область</div>
+													<a href="#" dowmload="#" class="tabs-archive__download _icon-downlaod"><span>Скачать</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

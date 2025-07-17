@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"404"
+	})
+	<body>
+		<div class="wrapper">
+			<header data-scroll class="header common">
+				<div class="header__container">
+					<div class="header__content">
+						<a href="#" class="header__logo">
+							<img data-src="../img/icons/logo.svg" alt>
+						</a>
+						<div class="header__menu menu">
+							<div class="menu__burger">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+							</div>
+							<nav class="menu__body">
+								<div data-spollers="1340, max" class="menu__spollers">
+									<div class="menu__item">
+										<button type="button" data-spoller class="menu__link _icon-arrow">Абонентам</button>
+										<div class="menu__items">
+											<ul>
+												<li>
+													<a href="#">Юридическим лицам</a>
+												</li>
+												<li>
+													<a href="#">Физическим лицам</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="menu__item">
+										<a href="#" class="menu__link">Тарифы</a>
+									</div>
+									<div class="menu__item">
+										<a href="#" class="menu__link">Контакты</a>
+									</div>
+									<div class="menu__item">
+										<a href="#" class="menu__link">Частые вопросы</a>
+									</div>
+									<div class="menu__item">
+										<button type="button" data-spoller class="menu__link _icon-arrow">О компании</button>
+										<div class="menu__items">
+											<ul>
+												<li>
+													<a href="#">О компании</a>
+												</li>
+												<li>
+													<a href="#">Вакансии</a>
+												</li>
+												<li>
+													<a href="#">Раскрытие информации</a>
+												</li>
+												<li>
+													<a href="#">Политика конфидециальности</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<a href="tel:84959305008" class="header__telephone-mob _icon-phone">
+									8 (495) 930-50-08
+								</a>
+							</nav>
+							<div class="menu__shadow"></div>
+						</div>
+						<div class="header__contacts">
+							<div class="header__telephone">
+								<a href="tel:84959305008" class="header__phone-icon _icon-phone"></a>
+								<a href="tel:84959305008" class="header__phone-link">8 (495) 930-50-08</a>
+							</div>
+							<button data-popup="#login-back" data-da=".menu__body, 991.98" class="header__login">
+								<div class="header__login-icon _icon-login"></div>
+								<div class="header__login-link">Выйти</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page common">
+				<div class="page__error error">
+					<div class="error__container">
+						<div class="error__bg">
+							<img data-src="../img/error.webp" srcset="../img/error.webp 1x, ../img/error@2x.webp 2x" alt>
+						</div>
+						<div class="error__content">
+							<div class="error__text">
+								<span>Несуществующая</span>
+								страница,
+								<a href="#">вернуться назад</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

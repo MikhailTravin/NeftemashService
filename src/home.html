@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			<header data-scroll class="header common">
+				<div class="header__container">
+					<div class="header__content">
+						<a href="#" class="header__logo">
+							<img data-src="../img/icons/logo.svg" alt>
+						</a>
+						<div class="header__menu menu">
+							<div class="menu__burger">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+							</div>
+							<nav class="menu__body">
+								<div data-spollers="1340, max" class="menu__spollers">
+									<div class="menu__item">
+										<button type="button" data-spoller class="menu__link _icon-arrow">Абонентам</button>
+										<div class="menu__items">
+											<ul>
+												<li>
+													<a href="#">Юридическим лицам</a>
+												</li>
+												<li>
+													<a href="#">Физическим лицам</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="menu__item">
+										<a href="#" class="menu__link">Тарифы</a>
+									</div>
+									<div class="menu__item">
+										<a href="#" class="menu__link">Контакты</a>
+									</div>
+									<div class="menu__item">
+										<a href="#" class="menu__link">Частые вопросы</a>
+									</div>
+									<div class="menu__item">
+										<button type="button" data-spoller class="menu__link _icon-arrow">О компании</button>
+										<div class="menu__items">
+											<ul>
+												<li>
+													<a href="#">О компании</a>
+												</li>
+												<li>
+													<a href="#">Вакансии</a>
+												</li>
+												<li>
+													<a href="#">Раскрытие информации</a>
+												</li>
+												<li>
+													<a href="#">Политика конфидециальности</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<a href="tel:84959305008" class="header__telephone-mob _icon-phone">
+									8 (495) 930-50-08
+								</a>
+							</nav>
+							<div class="menu__shadow"></div>
+						</div>
+						<div class="header__contacts">
+							<div class="header__telephone">
+								<a href="tel:84959305008" class="header__phone-icon _icon-phone"></a>
+								<a href="tel:84959305008" class="header__phone-link">8 (495) 930-50-08</a>
+							</div>
+							<button data-da=".menu__body, 991.98" class="header__login get-offer-login">
+								<div class="header__login-icon _icon-login"></div>
+								<div class="header__login-link">Личный кабинет</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="get-offer-block-login">
+				<div class="get-offer-close _icon-close"></div>
+				<form action="#" class="main-application__forms form-main-application">
+					<div class="form-main-application__content">
+						<h3>
+							Авторизация<br>
+							в личном кабинете
+						</h3>
+						<div class="form-main-application__input">
+							<input onkeypress='return event.charCode>= 48 && event.charCode <= 57;' data-required dava-validate autocomplete="off" type="text" placeholder="Номер договора" name="form[]">
+						</div>
+						<div class="form-main-application__input">
+							<input data-required dava-validate autocomplete="off" type="password" placeholder="Пароль" name="form[]">
+						</div>
+						<div class="form-main-application__buttons">
+							<button type="submit" class="form-main-application__button button _icon-login">Войти</button>
+							<a href="#" class="form-main-application__recover-password">Восстановить пароль</a>
+						</div>
+					</div>
+				</form>
+				<div class="main-application__forms form-main-application">
+					<div class="form-main-application__content ">
+						<div class="form-main-application__title">
+							Нет аккаунта?<br>
+							Оставьте заявку на подключение
+						</div>
+						<div class="form-main-application__subtitle">
+							Вы направляете нам пакет документов и получаете договор энергоснабжения на следующий день
+						</div>
+						<button class="form-main-application__button-login button _icon-key get-offer">Подключиться</button>
+					</div>
+				</div>
+			</div>
+			<div class="get-offer-block-password">
+				<div class="get-offer-close _icon-close"></div>
+				<form action="#" class="main-application__forms form-main-application">
+					<div class="form-main-application__content">
+						<h3>
+							Восстановление пароля
+						</h3>
+						<div class="form-main-application__input">
+							<input onkeypress='return event.charCode>= 48 && event.charCode <= 57;' data-required dava-validate autocomplete="off" type="text" placeholder="Номер договора" name="form[]">
+							<div class="form-main-application__input-text">На привязанную к аккаунту почту придёт ссылка на восстановление</div>
+						</div>
+						<div class="form-main-application__buttons">
+							<button type="submit" class="form-main-application__button button">Отправить</button>
+							<a href="#" class="form-main-application__cancel">Отмена</a>
+						</div>
+					</div>
+				</form>
+				<div class="main-application__forms form-main-application">
+					<div class="form-main-application__content ">
+						<div class="form-main-application__title">
+							Нет аккаунта?<br>
+							Оставьте заявку на подключение
+						</div>
+						<div class="form-main-application__subtitle">
+							Вы направляете нам пакет документов и получаете договор энергоснабжения на следующий день
+						</div>
+						<button class="form-main-application__button-login button _icon-key get-offer">Подключиться</button>
+					</div>
+				</div>
+			</div>
+			<main class="page common">
+				<div class="page__main-home main-home">
+					<div class="main-home__container">
+						<div class="main-home__body">
+							<div class="main-home__slider swiper">
+								<div class="main-home__wrapper swiper-wrapper">
+									<div class="main-home__slide swiper-slide">
+										<div class="main-home__bg">
+											<img data-src="../img/banners/banner-1.webp" srcset="../img/banners/banner-1.webp 1x, ../img/banners/banner-1@2x.webp 2x" alt>
+										</div>
+										<div class="main-home__bg-mob">
+											<img data-src="../img/banners/circle-1.webp" srcset="../img/banners/circle-1.webp 1x, ../img/banners/circle-1@2x.webp 2x" alt>
+										</div>
+										<div class="main-home__content">
+											<div class="main-home__desc">
+												<h2>Индивидуальный подход
+													к электроэнергетике<br>
+													вашего предприятия
+												</h2>
+												<p>Выезд инспектора, опломбировка приборов,
+													технологическое присоединение, помощь
+													в оформлении технической документации
+												</p>
+												<button class="main-home__button button _icon-paper get-offer">Получить предложение</butto>
+											</div>
+											<div class="main-home__image">
+												<img data-src="../img/image-1.webp" srcset="../img/image-1.webp 1x, ../img/image-1@2x.webp 2x" alt>
+											</div>
+										</div>
+									</div>
+									<div class="main-home__slide swiper-slide">
+										<div class="main-home__bg">
+											<img data-src="../img/banners/banner-3.webp" srcset="../img/banners/banner-3.webp 1x, ../img/banners/banner-2@2x.webp 2x" alt>
+										</div>
+										<div class="main-home__bg-mob">
+											<img data-src="../img/banners/circle-1.webp" srcset="../img/banners/circle-1.webp 1x, ../img/banners/circle-1@2x.webp 2x" alt>
+										</div>
+										<div class="main-home__content">
+											<div class="main-home__desc">
+												<h2>Долгосрочное
+													сотрудничество в области
+													энергоснабжения
+												</h2>
+												<p>Выезд инспектора, опломбировка приборов,
+													технологическое присоединение, помощь
+													в оформлении технической документации
+												</p>
+												<a href="#" class="main-home__button button _icon-paper get-offer-connection">Заключить договор</a>
+											</div>
+											<div class="main-home__image">
+												<img data-src="../img/image-3.webp" srcset="../img/image-3.webp 1x, ../img/image-3@2x.webp 2x" alt>
+											</div>
+										</div>
+									</div>
+									<div class="main-home__slide swiper-slide">
+										<div class="main-home__bg">
+											<img data-src="../img/banners/banner-2.webp" srcset="../img/banners/banner-2.webp 1x, ../img/banners/banner-2@2x.webp 2x" alt>
+										</div>
+										<div class="main-home__bg-mob">
+											<img data-src="../img/banners/circle-1.webp" srcset="../img/banners/circle-1.webp 1x, ../img/banners/circle-1@2x.webp 2x" alt>
+										</div>
+										<div class="main-home__content">
+											<div class="main-home__desc">
+												<h2>Высокие стандарты
+													обслуживания и опыт
+													работы свыше 10 лет
+												</h2>
+												<p>Выезд инспектора, опломбировка приборов,
+													технологическое присоединение, помощь
+													в оформлении технической документации
+												</p>
+												<a href="#" class="main-home__button button _icon-paper get-offer-connection">Заключить договор</a>
+											</div>
+											<div class="main-home__image">
+												<img data-src="../img/image-2.webp" srcset="../img/image-2.webp 1x, ../img/image-2@2x.webp 2x" alt>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__our-services our-services">
+					<div class="our-services__container">
+						<div class="our-services__content">
+							<div class="our-services__top top-desc">
+								<div class="our-services__title">
+									<h3>
+										Наши услуги
+									</h3>
+									<p>
+										ООО «Нефтемашсервис-С» оказывает полный спектр консультативных услуг по работе на розничном и оптовом рынке электроэнергии и мощности
+									</p>
+								</div>
+							</div>
+							<div class="our-services__body">
+								<div class="our-services__column">
+									<div class="our-services__item item-our-services">
+										<div class="item-our-services__desc">
+											<div class="item-our-services__title">Установка и обслуживание
+												электросчетчиков и систем учета
+											</div>
+											<div class="item-our-services__subtitle">
+												Установка и подключение прибора учета,
+												проверка схемы подключения, снятие показаний, проверка узла учета
+											</div>
+										</div>
+										<div class="item-our-services__image">
+											<img data-src="../img/icons-1.webp" srcset="../img/icons-1.webp 1x, ../img/icons-1@2x.webp 2x" alt>
+										</div>
+									</div>
+								</div>
+								<div class="our-services__column">
+									<div class="our-services__item item-our-services">
+										<div class="item-our-services__desc">
+											<div class="item-our-services__title">
+												Подготовка и сопровождение
+												технической документации
+											</div>
+											<div class="item-our-services__subtitle">
+												Подготовка и сопровождение документов на технологическое присоединение энергопринимающих устройств
+											</div>
+										</div>
+										<div class="item-our-services__image">
+											<img data-src="../img/icons-2.webp" srcset="../img/icons-2.webp 1x, ../img/icons-2@2x.webp 2x" alt>
+										</div>
+									</div>
+								</div>
+								<div class="our-services__column">
+									<div class="our-services__item item-our-services">
+										<div class="item-our-services__desc">
+											<div class="item-our-services__title">
+												Выезд инспектора
+											</div>
+											<div class="item-our-services__subtitle">
+												Проверка и корректировка<br>
+												показаний счетчиков
+											</div>
+											<button class="item-our-services__button button _icon-phone get-offer">Вызвать инспектора</b>
+										</div>
+										<div class="item-our-services__image">
+											<img data-src="../img/icons-3.webp" srcset="../img/icons-3.webp 1x, ../img/icons-3@2x.webp 2x" alt>
+											<button class="item-our-services__button-mob button _icon-phone get-offer">Вызвать инспектора</b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__main-payment-details main-payment-detailsy">
+					<div class="main-payment-detailsy__bg">
+						<img data-src="../img/banners/banner-17.webp" srcset="../img/banners/banner-17.webp 1x, ../img/banners/banner-17@2x.webp 2x" alt>
+					</div>
+					<div class="main-payment-detailsy__container">
+						<div class="main-payment-detailsy__content">
+							<h3>
+								Онлайн-оплата
+								и данные счетчиков
+								в одном кабинете
+							</h3>
+							<div class="main-payment-detailsy__list">
+								<ul class="scroll">
+									<li data-id="1" class="main-payment-detailsy__item _active">Баланс и начисления</li>
+									<li data-id="2" class="main-payment-detailsy__item">Онлайн-оплата через сайт</li>
+									<li data-id="3" class="main-payment-detailsy__item">Отчеты и документы</li>
+									<li data-id="4" class="main-payment-detailsy__item">Данные счетчиков</li>
+								</ul>
+							</div>
+							<button data-da=".main-payment-detailsy__container, 991.98" href="#" class="main-payment-detailsy__button button _icon-paper get-offer">Получить предложение</button>
+						</div>
+						<div data-id="1" class="main-payment-detailsy__image _active">
+							<img class="main-payment-detailsy__image-desc" data-src="../img/image-5.webp" srcset="../img/image-5.webp 1x, ../img/image-5@2x.webp 2x" alt>
+							<img class="main-payment-detailsy__image-mob" data-src="../img/image-6.webp" srcset="../img/image-6.webp 1x, ../img/image-6@2x.webp 2x" alt>
+						</div>
+						<div data-id="2" class="main-payment-detailsy__image">
+							<img class="main-payment-detailsy__image-desc" data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+							<img class="main-payment-detailsy__image-mob" data-src="../img/image-7.webp" srcset="../img/image-7.webp 1x, ../img/image-7@2x.webp 2x" alt>
+						</div>
+						<div data-id="3" class="main-payment-detailsy__image">
+							<img class="main-payment-detailsy__image-desc" data-src="../img/image-8.webp" srcset="../img/image-8.webp 1x, ../img/image-8@2x.webp 2x" alt>
+							<img class="main-payment-detailsy__image-mob" data-src="../img/image-8.webp" srcset="../img/image-8.webp 1x, ../img/image-8@2x.webp 2x" alt>
+						</div>
+						<div data-id="4" class="main-payment-detailsy__image">
+							<img class="main-payment-detailsy__image-desc" data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+							<img class="main-payment-detailsy__image-mob" data-src="../img/image-9.webp" srcset="../img/image-9.webp 1x, ../img/image-9@2x.webp 2x" alt>
+						</div>
+					</div>
+				</div>
+				<div class="page__main-about main-about">
+					<div class="main-about__circle"></div>
+					<div class="main-about__container">
+						<div class="main-about__content">
+							<div class="main-about__top top-desc">
+								<div class="main-about__title">
+									<h3>О компании</h3>
+									<p>
+										Мы предлагаем долгосрочное сотрудничество, свой опыт работы и стандарты обслуживания
+									</p>
+								</div>
+								<div data-da=".main-about__content, 991.98, first" class="main-about__number">
+									<span>16 лет</span>
+									<p>поставляем электрическую
+										энергию потребителям
+									</p>
+								</div>
+							</div>
+							<div data-spollers="767.98, max" class="main-about__body">
+								<div class="main-about__column">
+									<div class="main-about__item item-main-about">
+										<button type="button" data-spoller class="item-main-about__title _icon-arrow-slider">Мы настроены на взаимовыгодное
+											сотрудничество и абсолютно прозрачны</button>
+										<div class="item-main-about__body">
+											<div class="item-main-about__subtitle">
+												К числу наших клиентов относятся предприятия коммунального комплекса, компании военно-промышленного хозяйства, коммерческие организации
+											</div>
+										</div>
+										<div class="item-main-about__image">
+											<img data-src="../img/banners/eye.webp" srcset="../img/banners/eye.webp 1x, ../img/banners/eye@2x.webp 2x" alt>
+										</div>
+									</div>
+								</div>
+								<div class="main-about__column">
+									<div class="main-about__item item-main-about">
+										<button type="button" data-spoller class="item-main-about__title _icon-arrow-slider">Мы знаем как снизить комплексные затраты на энергоресурсы</button>
+										<div class="item-main-about__body">
+											<div class="item-main-about__subtitle">
+												Финансовые затраты на электроэнергию являются постоянными и вносят существенную долю в стоимость конечного продукта
+											</div>
+										</div>
+										<div class="item-main-about__image">
+											<img data-src="../img/banners/arrow.webp" srcset="../img/banners/arrow.webp 1x, ../img/banners/arrow@2x.webp 2x" alt>
+										</div>
+									</div>
+								</div>
+								<div class="main-about__column">
+									<div class="main-about__item item-main-about">
+										<button type="button" data-spoller class="item-main-about__title _icon-arrow-slider">Мы против коррупции</button>
+										<div class="item-main-about__body">
+											<div class="item-main-about__subtitle">
+												Если Вам стало известно о злоупотреблениях служебным положением и превышении полномочий должностными лицами Общества, просим немедленно позвонить по телефону
+											</div>
+											<div class="item-main-about__subtitle">
+												Горячая антикоррупционная линия
+												<a href="tel:84959305008" class="item-main-about__tel">8 (495) 930-50-08</a>
+											</div>
+										</div>
+										<div class="item-main-about__image">
+											<img data-src="../img/banners/star.webp" srcset="../img/banners/star.webp 1x, ../img/banners/star@2x.webp 2x" alt>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__main-blog main-blog">
+					<div class="main-blog__container">
+						<div class="main-blog__content">
+							<div class="main-blog__top top-desc">
+								<div class="main-blog__title">
+									<h3>Блог об электроэнергии</h3>
+								</div>
+								<a data-da=".main-blog__content, 767.98" href="#" class="main-blog__button button">Все статьи</a>
+							</div>
+							<div class="main-blog__body">
+								<div class="main-blog__row scroll">
+									<div class="main-blog__column">
+										<a href="#" class="main-blog__item">
+											<img data-src="../img/news-image-1.webp" srcset="../img/news-image-1.webp 1x, ../img/news-image-1@2x.webp 2x" alt>
+											<p>
+												Топ-5 причин почему ваше предприятие переплачивает за электроэнергию
+											</p>
+										</a>
+									</div>
+									<div class="main-blog__column">
+										<a href="#" class="main-blog__item">
+											<img data-src="../img/news-image-2.webp" srcset="../img/news-image-2.webp 1x, ../img/news-image-2@2x.webp 2x" alt>
+											<p>
+												Мне заменили обычный счетчик на «умный». Могу ли я больше не передавать показания приборов учета?
+											</p>
+										</a>
+									</div>
+									<div class="main-blog__column">
+										<a href="#" class="main-blog__item">
+											<img data-src="../img/news-image-3.webp" srcset="../img/news-image-3.webp 1x, ../img/news-image-3@2x.webp 2x" alt>
+											<p>
+												Как перестать переплачивать за электроэнергию? Советы, которые помогут каждому предпринимателю
+											</p>
+										</a>
+									</div>
+									<div class="main-blog__column">
+										<a href="#" class="main-blog__item">
+											<img data-src="../img/news-image-4.webp" srcset="../img/news-image-4.webp 1x, ../img/news-image-4@2x.webp 2x" alt>
+											<p>
+												Почему стоит задуматься о выборе поставщика электроэнергии?
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__main-application main-application">
+					<div class="main-application__container">
+						<div class="main-application__body">
+							<div class="main-application__bg">
+								<img data-src="../img/banners/banner-4.webp" srcset="../img/banners/banner-4.webp 1x, ../img/banners/banner-4@2x.webp 2x" alt>
+							</div>
+							<div class="main-application__content">
+								<h2>Начните экономить
+									на электроэнергии
+									уже сегодня
+								</h2>
+								<p>
+									Вы направляете нам пакет документов и получаете договор энергоснабжения на следующий день
+								</p>
+								<p style="color:#EFA021">Без доплаты за скорость!</p>
+							</div>
+							<form data-dev action="#" class="main-application__forms form-main-application">
+								<div class="form-main-application__content form-submit-contacts">
+									<h4>Заявка на подключение</h4>
+									<div class="form-main-application__input">
+										<input data-required dava-validate autocomplete="off" type="text" placeholder="Название компании" name="form[]">
+									</div>
+									<div class="form-main-application__input">
+										<input data-required dava-validate autocomplete="off" type="name" placeholder="Имя" name="form[]">
+									</div>
+									<div class="form-main-application__input">
+										<input data-required dava-validate autocomplete="off" type="tel" placeholder="Телефон" name="form[]" class="tel">
+									</div>
+									<div class="form-main-application__textarea">
+										<textarea placeholder="Комментарий"></textarea>
+									</div>
+									<div class="form-main-application__checkbox checkbox">
+										<input data-required checked id="c_2" class="checkbox__input" type="checkbox" value="2" name="form[]">
+										<label for="c_2" class="checkbox__label"></label>
+										<span class="checkbox__text">Согласие на <a href="#">обработку персональных данных</a></span>
+									</div>
+									<button type="submit" class="form-main-application__button button _icon-key">Подключиться</button>
+								</div>
+								<div class="form-main-application__content form-submit-contacts-2">
+									<div class="form-main-application__check _icon-check"></div>
+									<h4>
+										Ваша заявка
+										уже обрабатывается!
+									</h4>
+									<a href="#" class="form-main-application__button button">Новая анкета</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="page__main-clients main-clients">
+					<div class="main-clients__circle"></div>
+					<div class="main-clients__container">
+						<div class="main-clients__top top-desc">
+							<div class="main-clients__title">
+								<h3>Наши постоянные клиенты</h3>
+								<p>
+									Предприятия коммунального комплекса, военно-промышленного хозяйства, коммерческие организации, потребители социальной и бюджетной сферы, находящиеся в Москве, Московской и Калужской областях
+								</p>
+							</div>
+							<div class="main-clients__number">
+								<span>300+</span>
+								<p>
+									организаций уже
+									сотрудничают с нами
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="main-clients__body">
+						<div class="main-clients__slider swiper">
+							<div class="main-clients__wrapper swiper-wrapper">
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-7.webp" srcset="../img/clients/client-7.webp 1x, ../img/clients/client-7@2x.webp 2x" alt>
+									</div>
+								</div>
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-1.webp" srcset="../img/clients/client-1.webp 1x, ../img/clients/client-1@2x.webp 2x" alt>
+									</div>
+								</div>
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-2.webp" srcset="../img/clients/client-2.webp 1x, ../img/clients/client-2@2x.webp 2x" alt>
+									</div>
+								</div>
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-3.webp" srcset="../img/clients/client-3.webp 1x, ../img/clients/client-3@2x.webp 2x" alt>
+									</div>
+								</div>
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-4.webp" srcset="../img/clients/client-4.webp 1x, ../img/clients/client-4@2x.webp 2x" alt>
+									</div>
+								</div>
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-5.webp" srcset="../img/clients/client-5.webp 1x, ../img/clients/client-5@2x.webp 2x" alt>
+									</div>
+								</div>
+								<div class="main-clients__slide swiper-slide">
+									<div class="main-clients__column">
+										<img data-src="../img/clients/client-6.webp" srcset="../img/clients/client-6.webp 1x, ../img/clients/client-6@2x.webp 2x" alt>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__cookies cookies">
+					<div class="cookies__container">
+						<div class="cookies__content">
+							<div class="cookies__text">Мы используем cookie, чтобы сделать работу сайта лучше.<br> Оставаясь на сайте, вы соглашаетесь с этим</div>
+							<button type="button" class="cookies__button button"><span>Принять</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="get-offer-block">
+					<div class="get-offer-close _icon-close"></div>
+					<form data-dev action="#" class="main-application__forms form-main-application">
+						<div class="form-main-application__content form-submit-contacts">
+							<h3>Получить
+								предложение
+							</h3>
+							<div class="form-main-application__input">
+								<input data-required dava-validate autocomplete="off" type="text" placeholder="Название компании" name="form[]">
+							</div>
+							<div class="form-main-application__input">
+								<input data-required dava-validate autocomplete="off" type="name" placeholder="Имя" name="form[]">
+							</div>
+							<div class="form-main-application__input">
+								<input data-required dava-validate autocomplete="off" type="tel" placeholder="Телефон" name="form[]" class="tel">
+							</div>
+							<div class="form-main-application__textarea">
+								<textarea placeholder="Комментарий"></textarea>
+							</div>
+							<div class="form-main-application__checkbox checkbox">
+								<input data-required checked id="c_3" class="checkbox__input" type="checkbox" value="3" name="form[]">
+								<label for="c_3" class="checkbox__label"></label>
+								<span class="checkbox__text">Согласие на <a href="#">обработку персональных данных</a></span>
+							</div>
+							<button type="submit" class="form-main-application__button button _icon-key">Подключиться</button>
+						</div>
+						<div class="form-main-application__content form-submit-contacts-2">
+							<div class="form-main-application__check _icon-check"></div>
+							<h4>
+								Ваша заявка
+								уже обрабатывается!
+							</h4>
+							<a href="#" class="form-main-application__button button">Новая анкета</a>
+						</div>
+					</form>
+				</div>
+				<div class="get-offer-block-connection">
+					<div class="get-offer-close _icon-close"></div>
+					<form data-dev action="#" class="main-application__forms form-main-application">
+						<div class="form-main-application__content form-submit-contacts">
+							<h3>
+								Заявка на подключение
+							</h3>
+							<div class="form-main-application__input">
+								<input data-required dava-validate autocomplete="off" type="text" placeholder="Название компании" name="form[]">
+							</div>
+							<div class="form-main-application__input">
+								<input data-required dava-validate autocomplete="off" type="name" placeholder="Имя" name="form[]">
+							</div>
+							<div class="form-main-application__input">
+								<input data-required dava-validate autocomplete="off" type="tel" placeholder="Телефон" name="form[]" class="tel">
+							</div>
+							<div class="form-main-application__textarea">
+								<textarea placeholder="Комментарий"></textarea>
+							</div>
+							<div class="form-main-application__checkbox checkbox">
+								<input data-required checked id="c_3" class="checkbox__input" type="checkbox" value="3" name="form[]">
+								<label for="c_3" class="checkbox__label"></label>
+								<span class="checkbox__text">Согласие на <a href="#">обработку персональных данных</a></span>
+							</div>
+							<button type="submit" class="form-main-application__button button _icon-key">Подключиться</button>
+						</div>
+						<div class="form-main-application__content form-submit-contacts-2">
+							<div class="form-main-application__check _icon-check"></div>
+							<h4>
+								Ваша заявка
+								уже обрабатывается!
+							</h4>
+							<a href="#" class="form-main-application__button button">Новая анкета</a>
+						</div>
+					</form>
+				</div>
+				<div class="get-offer-shadow"></div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
