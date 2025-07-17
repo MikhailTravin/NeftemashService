@@ -1,0 +1,155 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+.spollers {
+	margin: -5px 0px;
+	// .spollers__item
+	&__item {
+		width: 100%;
+		padding: 5px 0px;
+	}
+	// .spollers__title
+	&__title {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align: left;
+		padding: 28px 30px;
+		border: 1px solid #ebebeb;
+		border-radius: 2px;
+		@media (max-width: $mobile) {
+			padding: 20px 15px;
+		}
+		h5 {
+			display: flex;
+			align-items: center;
+			color: $color_green_dark;
+			@media (max-width: $mobile) {
+				font-size: 16px;
+				line-height: math.div(22, 16);
+			}
+		}
+		span {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0px 5px 0px 12px;
+			transition: all 0.3s ease 0s;
+			width: 24px;
+			height: 24px;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transition: all 0.3s ease 0s;
+				margin: -1px 0px 0px -5.5px;
+				width: 24px;
+				height: 3px;
+				background-color: $color_green;
+			}
+			&::before {
+				transform: rotate(-90deg);
+			}
+			@media (max-width: $mobile) {
+				width: 18px;
+				height: 18px;
+				margin: 0px 5px 0px 12px;
+				&::before,
+				&::after {
+					height: 2px;
+					width: 18px;
+				}
+			}
+		}
+		&._spoller-active {
+			border-left: 1px solid $color_green;
+			border-right: 1px solid $color_green;
+			border-top: 1px solid $color_green;
+			border-bottom: 1px solid transparent;
+			padding: 20px 30px;
+			@media (max-width: $mobile) {
+				padding: 20px 15px;
+			}
+			span {
+				&::before {
+					transform: rotate(0deg);
+				}
+			}
+		}
+	}
+	// .spollers__title-button
+	&__title-button {
+		font-size: 14px;
+		line-height: math.div(17, 14);
+		background: linear-gradient(63.92deg, #04ba71 19.94%, #52e34f 82.83%);
+		margin: 0px 0px 0px 40px;
+		padding: 10px 20px;
+		pointer-events: none;
+		&:hover {
+			background: linear-gradient(63.92deg, #04ba71 19.94%, #52e34f 82.83%);
+			color: $color_white;
+		}
+		@media (max-width: $mobile) {
+			padding: 6px 10px;
+			font-size: 12px;
+			line-height: math.div(14, 12);
+			margin: 0px 0px 0px 15px;
+		}
+	}
+	// .questions-spollers__body
+	&__body {
+		padding: 0px 30px 30px 35px;
+		border-left: 1px solid $color_green;
+		border-right: 1px solid $color_green;
+		border-bottom: 1px solid $color_green;
+		border-radius: 0px 0px 2px 2px;
+		@media (max-width: $mobile) {
+			padding: 0px 15px 20px 15px;
+		}
+		ul {
+			margin: -5px 0px;
+			li {
+				display: flex;
+				padding: 5px 0px;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: math.div(24, 16);
+				span {
+					margin: 0px 5px 0px 0px;
+				}
+				@media (max-width: $mobile) {
+					font-size: 14px;
+					line-height: math.div(21, 14);
+				}
+			}
+		}
+	}
+	// .spollers__button
+	&__button {
+		width: 141px;
+		flex-direction: row;
+		padding: 15px 20px;
+		margin: 20px 0px 0px 0px;
+		&::before {
+			margin: 0px 10px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			padding: 12px 20px;
+			width: 100%;
+		}
+	}
+}
+
+.spollers-button {
+	.spollers__title {
+		padding: 21px 30px;
+		@media (max-width: $mobile) {
+			padding: 20px 15px;
+		}
+	}
+}

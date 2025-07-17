@@ -1,0 +1,112 @@
+body::after {
+	content: "";
+	background: rgba(15, 15, 15, 0.15);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+.popup-show body::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 20px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background: $color_white;
+	box-shadow: 0px 20px 40px rgba(25, 25, 25, 0.05);
+	border-radius: 2px;
+	padding: 20px;
+	width: 100%;
+	max-width: 600px;
+	min-height: 273px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.lock & {
+		visibility: visible;
+	}
+	@media (max-width: $mobile) {
+		padding: 80px 15px;
+	}
+}
+
+.delete-card {
+	// .delete-card__content
+	&__content {
+		h4 {
+			text-align: center;
+			margin: 0px 0px 30px 0px;
+			color: $mainColor;
+		}
+	}
+	// .delete-card__buttons
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+		}
+	}
+	// .delete-card__button
+	&__button {
+		width: 142px;
+		padding: 20px 40px;
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+		}
+	}
+	// .delete-card__button-close
+	&__button-close {
+		width: 142px;
+		background: $color_white;
+		border: 1px solid #ebebeb;
+		color: $mainColor;
+		margin: 0px 0px 0px 30px;
+		padding: 20px 40px;
+		&:hover {
+			color: $color_white;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+			margin: 10px 0px 0px 0px;
+		}
+	}
+}

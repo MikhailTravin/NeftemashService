@@ -1,0 +1,94 @@
+.page {
+	// .page__jobs
+	&__jobs {
+		position: relative;
+		z-index: 10;
+		background: #f8f8f8;
+		margin: 0px 0px -72px 0px;
+		@media (max-width: $tablet) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+
+.jobs {
+	// .jobs__container
+	&__container {
+		@media (max-width: $tablet) {
+			padding: 0px 0px 0px 0px;
+		}
+	}
+	// .jobs__content
+	&__content {
+		background: $color_white;
+		padding: 60px 30px;
+		position: relative;
+		top: -162px;
+		@media (max-width: $tablet) {
+			top: 0;
+		}
+		@media (max-width: $mobile) {
+			padding: 30px 20px 50px 20px;
+		}
+	}
+	// .jobs__column
+	&__column {
+		display: flex;
+		margin: 0px 0px 60px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 50px 0px;
+			flex-direction: column;
+		}
+	}
+	// .jobs__left
+	&__left {
+		flex: 0 1 390px;
+		padding: 0px 20px 0px 0px;
+		@media (max-width: $mobile) {
+			padding: 0px 0px 0px 0px;
+			flex: 1 1 auto;
+		}
+		h4 {
+			@media (max-width: $mobile) {
+				font-size: 16px;
+				line-height: math.div(19, 16);
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+	// .jobs__right
+	&__right {
+		flex: 0 1 850px;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+		}
+		ul {
+			margin: -7px 0px;
+			max-width: 700px;
+			li {
+				padding: 7px 0px;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: math.div(24, 16);
+				display: flex;
+				&::before {
+					min-width: 24px;
+					height: 24px;
+					display: flex;
+					font-size: 15px;
+					color: #efa021;
+					justify-content: center;
+					align-items: center;
+					margin: 2px 15px 0px 0px;
+				}
+				@media (max-width: $mobile) {
+					font-size: 14px;
+					line-height: math.div(21, 14);
+				}
+			}
+		}
+	}
+}

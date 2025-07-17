@@ -1,0 +1,325 @@
+.page {
+	// .page__electricity-supply-persons
+	&__electricity-supply-persons {
+		padding: 100px 0px;
+		@media (max-width: $mobile) {
+			padding: 50px 0px;
+		}
+	}
+}
+
+.electricity-supply-persons {
+	// .electricity-supply-persons__container
+	&__container {
+	}
+	// .electricity-supply-persons__content
+	&__content {
+		display: flex;
+		margin: 0px 0px 100px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+	// .electricity-supply-persons__left
+	&__left {
+		flex: 0 0 350px;
+		margin: 0px 30px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		h3 {
+			max-width: 265px;
+		}
+		@media (max-width: $tablet) {
+			flex: 1 1 auto;
+			margin: 0px 0px 30px 0px;
+			h3 {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: $mobile) {
+			h3 {
+				max-width: 270px;
+			}
+		}
+	}
+	// .electricity-supply-persons__button
+	&__button {
+		width: auto;
+		font-size: 14px;
+		line-height: math.div(17, 14);
+		margin: 40px 0px 0px 0px;
+		background: $color_white;
+		border: 1px solid $color_green;
+		color: $color_green;
+		padding: 10px 20px;
+		&:hover {
+			background: $color_green;
+			color: $color_white;
+		}
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+	// .electricity-supply-persons__button-mob
+	&__button-mob {
+		display: none;
+		@media (max-width: $tablet) {
+			display: flex;
+			width: auto;
+			font-size: 14px;
+			line-height: math.div(17, 14);
+			margin: 40px 0px 0px 0px;
+			background: $color_white;
+			border: 1px solid $color_green;
+			color: $color_green;
+			padding: 10px 20px;
+			&:hover {
+				background: $color_green;
+				color: $color_white;
+			}
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding: 15px 20px;
+			margin: 30px 0px 0px 0px;
+		}
+	}
+	// .electricity-supply-persons__spollers
+	&__spollers {
+		flex: 0 1 auto;
+		width: 100%;
+	}
+	// .electricity-supply-persons__contract
+	&__contract {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		flex: 0 1 auto;
+		width: 100%;
+	}
+	// .electricity-supply-persons__info
+	&__info {
+		border: 1px solid $color_green;
+		border-radius: 2px;
+		padding: 30px;
+		@media (max-width: $mobile) {
+			padding: 20px 15px;
+		}
+		p {
+			margin: 0px 0px 25px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+}
+
+.contract-electricity {
+	p {
+		max-width: 623px;
+		margin: 0px 0px 60px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	h5 {
+		max-width: 700px;
+		color: $color_green_dark;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $mobile) {
+			font-size: 16px;
+			line-height: math.div(22, 16);
+		}
+	}
+	ul {
+		max-width: 700px;
+		padding: 0px 0px 60px 0px;
+		margin: -7px 0px;
+		@media (max-width: $mobile) {
+			padding: 0px 0px 30px 0px;
+		}
+		li {
+			padding: 7px 0px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: math.div(24, 16);
+			@media (max-width: $mobile) {
+				font-size: 14px;
+				line-height: math.div(21, 14);
+			}
+			span {
+				display: flex;
+				&::before {
+					min-width: 24px;
+					height: 24px;
+					display: flex;
+					font-size: 15px;
+					color: #efa021;
+					justify-content: center;
+					align-items: center;
+					margin: 2px 15px 0px 0px;
+				}
+			}
+			ul {
+				margin: -5px 0px -5px 40px;
+				padding: 10px 0px 3px 0px;
+				li {
+					display: flex;
+					padding: 5px 0px;
+					&::before {
+						content: "";
+						width: 4px;
+						padding: 2px;
+						height: 4px;
+						border-radius: 50%;
+						background: $mainColor;
+						margin: 11px 11px 0px 8px;
+					}
+					@media (max-width: $mobile) {
+						&::before {
+							content: "";
+							margin: 9px 11px 0px 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .contract-electricity__image
+	&__image {
+		max-width: 100%;
+		width: 100%;
+		background: $color_green;
+		margin: 0px 0px 60px 0px;
+		padding: 30px;
+		position: relative;
+		overflow: hidden;
+		img {
+			top: -17px;
+			right: 60px;
+			position: absolute;
+			z-index: 1;
+			height: 150px;
+		}
+		h5 {
+			position: relative;
+			z-index: 3;
+			max-width: 580px;
+			margin: 0px 0px 0px 0px;
+			color: $color_white;
+			@media (max-width: $tablet) {
+				br {
+					display: none;
+				}
+			}
+			@media (max-width: $mobile) {
+				font-size: 16px;
+				line-height: math.div(22, 16);
+			}
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+			padding: 100px 15px 20px 15px;
+			img {
+				width: 120px;
+				top: -47px;
+				right: 25px;
+				height: 150px;
+			}
+		}
+	}
+	// .contract-electricity__button
+	&__button {
+		flex-direction: row;
+		padding: 12px 20px;
+		margin: 0px 0px 60px 0px;
+		&::before {
+			margin: 0px 10px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+			margin: 0px 0px 50px 0px;
+		}
+	}
+	// .contract-electricity__block
+	&__block {
+		background: #f8f8f8;
+		border-radius: 2px;
+		padding: 20px 30px 30px 30px;
+		max-width: 700px;
+		margin: 0px 0px 60px 0px;
+		@media (max-width: $tablet) {
+			padding: 20px 15px;
+			margin: 0px 0px 50px 0px;
+		}
+		p {
+			max-width: 100%;
+			margin: 0px 0px 20px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+	// .contract-electricity__downloads
+	&__downloads {
+		display: flex;
+		margin: -5px;
+		flex-wrap: wrap;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			width: 100%;
+			margin: -5px 0px;
+		}
+	}
+	// .contract-electricity__download
+	&__download {
+		padding: 5px;
+		flex: 0 1 auto;
+		a {
+			border: 1px solid #ebebeb;
+			border-radius: 2px;
+			padding: 11px 20px;
+			white-space: nowrap;
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: math.div(17, 14);
+			transition: all 0.3s ease 0s;
+			&::before {
+				width: 20px;
+				height: 20px;
+				font-size: 16px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: $color_green;
+				margin: 0px 10px 0px 0px;
+				transition: all 0.3s ease 0s;
+			}
+			&:hover {
+				border: 1px solid transparent;
+				background: $color_green;
+				color: $color_white;
+				&::before {
+					color: $color_white;
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			padding: 5px 0px;
+			flex: 1 1 auto;
+			a {
+				width: 100%;
+				white-space: break-spaces;
+			}
+		}
+	}
+}

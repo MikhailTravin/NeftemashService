@@ -1,0 +1,117 @@
+.page {
+	// .page__error
+	&__error {
+		background: $color_green_dark;
+		min-height: 677px;
+		overflow: hidden;
+		@media (max-width: $mobile) {
+			min-height: 100%;
+		}
+	}
+}
+.error {
+	// .error__container
+	&__container {
+		max-width: 876px;
+		min-height: 677px;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		@media (max-width: $mobile) {
+			min-height: 500px;
+		}
+		@media (max-width: $mobileSmall) {
+			align-items: center;
+		}
+	}
+	// .error__content
+	&__content {
+		position: relative;
+		z-index: 3;
+		margin: 0px 90px 0px 0px;
+		top: 60px;
+		@media (max-width: $pc) {
+			margin: 0px 180px 0px 0px;
+		}
+		@media (max-width: $tablet) {
+			margin: 0px 148px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 0px 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+	}
+	// .error__bg
+	&__bg {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		@media (max-width: $pc) {
+			left: -10%;
+		}
+		@media (max-width: $tablet) {
+			top: 0;
+			left: 0;
+			width: auto;
+			img {
+				height: 100%;
+			}
+		}
+		@media (max-width: 900px) {
+			width: 118%;
+			left: -18%;
+		}
+		@media (max-width: $mobile) {
+			width: 115%;
+			left: -19%;
+		}
+		@media (max-width: 550px) {
+			width: 119%;
+		}
+		@media (max-width: $mobileSmall) {
+			left: -35%;
+			width: 135%;
+		}
+	}
+	// .error__text
+	&__text {
+		font-weight: 500;
+		font-size: 19px;
+		line-height: math.div(23, 19);
+		color: $color_white;
+		text-align: center;
+		@media (max-width: $mobile) {
+			font-size: 16px;
+			line-height: math.div(19, 16);
+		}
+		@media (max-width: $mobileSmall) {
+			max-width: 300px;
+		}
+		span {
+			margin: 0px 17px 0px 0px;
+			@media (max-width: 900px) {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+		a {
+			border-bottom: 1px solid $color_white;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+}

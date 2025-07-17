@@ -1,0 +1,89 @@
+.tabs-charge-history {
+	// .tabs-charge-history__content
+	&__content {
+		h5 {
+			color: $color_green_dark;
+			margin: 0px 0px 30px 0px;
+			@media (max-width: $mobile) {
+				font-size: 18px;
+				line-height: math.div(25, 18);
+			}
+		}
+	}
+	// .tabs-charge-history__body
+	&__body {
+	}
+	// .tabs-charge-history__navigation
+	&__navigation {
+		display: flex;
+		margin: 0px 0px 15px 0px;
+	}
+	// .tabs-charge-history__title
+	&__title {
+		flex: 0 0 300px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: math.div(17, 14);
+		color: $color_green;
+		padding: 0px 20px 0px 0px;
+		span {
+			color: #afafaf;
+		}
+		&:last-child {
+			flex: 1 1 auto;
+			padding: 0px 0px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			flex: 0 0 80px;
+			padding: 0px 0px 0px 0px;
+			font-size: 12px;
+			line-height: math.div(14, 12);
+			&:first-child {
+				flex: 1 0 auto;
+			}
+		}
+	}
+	// .tabs-charge-history__tables
+	&__tables {
+	}
+	// .tabs-charge-history__column
+	&__column {
+		display: flex;
+		margin: 0px 0px 30px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .tabs-charge-history__name
+	&__name {
+		flex: 0 0 300px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(24, 16);
+		padding: 0px 20px 0px 0px;
+		&:last-child {
+			flex: 1 1 auto;
+			text-align: right;
+			color: #afafaf;
+			padding: 0px 0px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			flex: 0 0 80px;
+			font-size: 14px;
+			line-height: math.div(21, 14);
+			padding: 0px 0px 0px 0px;
+			&:first-child {
+				flex: 1 0 auto;
+			}
+		}
+	}
+}
+
+.charge-history-last {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}

@@ -1,0 +1,400 @@
+.tabs-card-account {
+	// .tabs-card-account__content
+	&__content {
+		max-width: 1090px;
+		h5 {
+			color: $color_green_dark;
+			margin: 0px 0px 20px 0px;
+			@media (max-width: $mobile) {
+				font-size: 18px;
+				line-height: math.div(25, 18);
+				margin: 0px 0px 30px 0px;
+			}
+		}
+	}
+	// .tabs-card-account__body
+	&__body {
+	}
+	// .tabs-card-account__cards
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px;
+		padding: 0px 0px 40px 0px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 50px 0px;
+		}
+	}
+	// .tabs-card-account__card
+	&__card {
+		flex: 0 1 33.3333%;
+		padding: 10px;
+		@media (max-width: $tablet) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			padding: 0px 0px 0px 0px;
+			&:first-child {
+				.tabs-card-account__info {
+					@media (max-width: $mobile) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	// .tabs-card-account__close
+	&__close {
+		cursor: pointer;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		&::before {
+			font-size: 26px;
+			font-weight: 700;
+			color: #ebebeb;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			&::before {
+				color: $color_green_dark;
+			}
+		}
+		@media (max-width: $tablet) {
+			top: 3px;
+			right: 3px;
+			&::before {
+				font-size: 22px;
+			}
+		}
+	}
+	// .tabs-card-account__item
+	&__item {
+		position: relative;
+		border: 1px solid #ebebeb;
+		background: #f8f8f8;
+		border-radius: 2px;
+		padding: 30px;
+		min-height: 150px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		transition: all 0.3s ease 0s;
+		@media (max-width: $mobile) {
+			min-height: auto;
+			padding: 20px;
+		}
+		p {
+			display: flex;
+			align-items: center;
+			color: #afafaf;
+			&::before {
+				font-size: 20px;
+				margin: 0px 15px 0px 0px;
+			}
+			@media (max-width: $mobileSmall) {
+				font-size: 16px;
+				line-height: math.div(19, 16);
+			}
+		}
+		&._active {
+			border: 1px solid $color_green;
+			background: $color_green;
+			.tabs-card-account__close {
+				&::before {
+					color: $color_white;
+				}
+				&:hover {
+					&::before {
+						color: $color_green_dark;
+					}
+				}
+			}
+			.tabs-card-account__num-card {
+				color: $color_white;
+			}
+			.tabs-card-account__info {
+				color: $color_white;
+				@media (max-width: $mobile) {
+					display: none;
+				}
+			}
+			p {
+				color: $color_white;
+			}
+		}
+		&:hover {
+			border: 1px solid $color_green;
+			background: $color_green;
+			.tabs-card-account__num-card {
+				color: $color_white;
+			}
+			.tabs-card-account__info {
+				color: $color_white;
+			}
+			p {
+				color: $color_white;
+			}
+		}
+	}
+	// .tabs-card-account__num-card
+	&__num-card {
+		transition: all 0.3s ease 0s;
+		flex: 1 1 auto;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: math.div(24, 24);
+	}
+	// .tabs-card-account__info
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(17, 14);
+		color: #afafaf;
+		transition: all 0.3s ease 0s;
+		margin: 40px 0px 0px 0px;
+		@media (max-width: $mobile) {
+			margin: 60px 0px 0px 0px;
+		}
+	}
+	// .tabs-card-account__text
+	&__text {
+	}
+	// .tabs-card-account__forms
+	&__forms {
+		h5 {
+			color: $color_green_dark;
+			margin: 0px 0px 30px 0px;
+			@media (max-width: $mobile) {
+				font-size: 18px;
+				line-height: math.div(25, 18);
+			}
+		}
+	}
+}
+
+.new-card {
+	justify-content: center;
+	align-items: center;
+	background: $color_white;
+	&._active {
+		border: 1px solid $color_green;
+		background: $color_white;
+		.tabs-card-account__num-card {
+			color: $color_green;
+		}
+		.tabs-card-account__info {
+			color: $color_green;
+			@media (max-width: $mobile) {
+				display: none;
+			}
+		}
+		p {
+			color: $color_green;
+		}
+	}
+	@media (max-width: $mobile) {
+		margin: 20px 0px 0px 0px;
+	}
+}
+
+.new-card-form {
+	.form-tabs-card-account__inputs {
+		display: flex;
+		max-width: 972px;
+		margin: 0px 0px 30px 0px;
+		@media (max-width: $tablet) {
+			max-width: 100%;
+		}
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+	.form-tabs-card-account__inputs-block {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 0 1 50%;
+		margin: -10px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			flex: 1 1 auto;
+			margin: 0px 0px 0px 0px;
+		}
+		.form-tabs-card-account__input {
+			width: 50%;
+			margin: 0px 0px 10px 0px;
+			padding: 10px;
+			&:first-child {
+				width: 100%;
+				flex: 1 1 auto;
+			}
+			@media (max-width: $mobile) {
+				width: 100%;
+				flex: 1 1 auto;
+				margin: 0px 0px 20px 0px;
+				padding: 0px 0px 0px 0px;
+			}
+		}
+	}
+	.form-tabs-card-account__input {
+		max-width: 100%;
+		flex: 0 1 50%;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 30px;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			width: 100%;
+			padding: 0px 0px 0px 0px;
+		}
+	}
+}
+
+.form-tabs-card-account {
+	// .form-tabs-card-account__inputs
+	&__inputs {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .form-tabs-card-account__input
+	&__input {
+		max-width: 520px;
+		margin: 0px 0px 30px 0px;
+		@media (max-width: $tablet) {
+			max-width: 100%;
+		}
+		input {
+			outline: none;
+			width: 100%;
+			border: 1px solid #ebebeb;
+			border-radius: 2px;
+			padding: 15px 20px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: math.div(24, 16);
+			&::placeholder {
+				color: #afafaf;
+			}
+			&._form-error {
+				border: 1px solid #e54d42;
+			}
+			&._form-focus {
+				border: 1px solid #04ba71;
+			}
+		}
+	}
+	// .form-tabs-card-account__label
+	&__label {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 0px 10px 0px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+		label {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: math.div(17, 14);
+			color: $color_green;
+			margin: 0px 10px 0px 0px;
+			span {
+				color: #afafaf;
+				margin: 0px 0px 0px 10px;
+			}
+			@media (max-width: $mobile) {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+	// .form-tabs-card-account__total
+	&__total {
+		display: flex;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(17, 14);
+		color: $color_grey;
+		color: #afafaf;
+		span {
+			color: $mainColor;
+			margin: 0px 0px 0px 5px;
+			border-bottom: 1px dashed #afafaf;
+		}
+		a {
+			border-bottom: 1px dashed #afafaf;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
+		@media (max-width: $mobile) {
+			margin: 10px 0px 0px 0px;
+		}
+	}
+	// .form-tabs-card-account__buttons
+	&__buttons {
+		display: flex;
+		align-items: center;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			align-items: start;
+		}
+	}
+	// .form-tabs-card-account__button
+	&__button {
+		flex-direction: row;
+		&::before {
+			content: "";
+			background-image: url("../img/icons/wallet.svg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin: 0px 10px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+	// .form-tabs-card-account__button-plus
+	&__button-plus {
+		flex-direction: row;
+		&::before {
+			margin: 0px 10px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+	// .form-tabs-card-account__text
+	&__text {
+		max-width: 350px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+		color: #afafaf;
+		margin: 0px 0px 0px 30px;
+		a {
+			border-bottom: 1px solid #afafaf;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
+		@media (max-width: $mobile) {
+			max-width: 100%;
+			margin: 10px 0px 0px 0px;
+			letter-spacing: -0.05px;
+		}
+	}
+}
+
+.linking-card-form-text {
+	@media (max-width: $mobileSmall) {
+		font-size: 12px;
+		line-height: math.div(14, 12);
+	}
+}
